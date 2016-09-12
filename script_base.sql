@@ -1,3 +1,4 @@
+DROP DATABASE linea;
 CREATE DATABASE linea;
 USE linea
 
@@ -55,26 +56,26 @@ CREATE TABLE Tabla6(
 	fecha_creacion timestamp
 );
 
-INSERT INTO Tabla1 VALUES (null,'Un registro','Una descripcion','localhost/url',1,now());
-INSERT INTO Tabla1 VALUES (null,'Un registro','Una descripcion','localhost/url',1,now());
-INSERT INTO Tabla1 VALUES (null,'Un registro','Una descripcion','localhost/url',1,now());
+INSERT INTO Tabla1 VALUES (null,'Un registro','Una descripcion','imagenes/1.jpg',1,now());
+INSERT INTO Tabla1 VALUES (null,'Un registro','Una descripcion','imagenes/1.jpg',1,now());
+INSERT INTO Tabla1 VALUES (null,'Un registro','Una descripcion','imagenes/1.jpg',1,now());
 
-INSERT INTO Tabla2 VALUES (null,'Un registro','Una descripcion','localhost/url',2,now());
-INSERT INTO Tabla2 VALUES (null,'Un registro','Una descripcion','localhost/url',2,now());
-INSERT INTO Tabla2 VALUES (null,'Un registro','Una descripcion','localhost/url',2,now());
+INSERT INTO Tabla2 VALUES (null,'Un registro','Una descripcion','imagenes/2.jpg',2,now());
+INSERT INTO Tabla2 VALUES (null,'Un registro','Una descripcion','imagenes/2.jpg',2,now());
+INSERT INTO Tabla2 VALUES (null,'Un registro','Una descripcion','imagenes/2.jpg',2,now());
 
-INSERT INTO Tabla3 VALUES (null,'Un registr3','Una descripcion','localhost/url',3,now());
-INSERT INTO Tabla3 VALUES (null,'Un registr3','Una descripcion','localhost/url',3,now());
-INSERT INTO Tabla3 VALUES (null,'Un registr3','Una descripcion','localhost/url',3,now());
+INSERT INTO Tabla3 VALUES (null,'Un registr3','Una descripcion','imagenes/3.jpg',3,now());
+INSERT INTO Tabla3 VALUES (null,'Un registr3','Una descripcion','imagenes/3.jpg',3,now());
+INSERT INTO Tabla3 VALUES (null,'Un registr3','Una descripcion','imagenes/3.jpg',3,now());
 
-INSERT INTO Tabla4 VALUES (null,'Un registro4','Una descripcion4','localhost/url4',4,now());
-INSERT INTO Tabla4 VALUES (null,'Un registro4','Una descripcion4','localhost/url4',4,now());
-INSERT INTO Tabla4 VALUES (null,'Un registro4','Una descripcion4','localhost/url4',4,now());
+INSERT INTO Tabla4 VALUES (null,'Un registro4','Una descripcion4','imagenes/4.jpg',4,now());
+INSERT INTO Tabla4 VALUES (null,'Un registro4','Una descripcion4','imagenes/4.jpg',4,now());
+INSERT INTO Tabla4 VALUES (null,'Un registro4','Una descripcion4','imagenes/4.jpg',4,now());
 
-INSERT INTO Tabla5 VALUES (null,'Un registro5','Una descripcion5','localhost/url',5,now());
-INSERT INTO Tabla5 VALUES (null,'Un registro5','Una descripcion5','localhost/url',5,now());
-INSERT INTO Tabla5 VALUES (null,'Un registro5','Una descripcion5','localhost/url',5,now());
+INSERT INTO Tabla5 VALUES (null,'Un registro5','Una descripcion5','imagenes/4.jpg',5,now());
+INSERT INTO Tabla5 VALUES (null,'Un registro5','Una descripcion5','imagenes/4.jpg',5,now());
+INSERT INTO Tabla5 VALUES (null,'Un registro5','Una descripcion5','imagenes/4.jpg',5,now());
 
-INSERT INTO Tabla6 VALUES (null,'Un registro6','Una descripcion','localhost/url6',6,now());
-INSERT INTO Tabla6 VALUES (null,'Un registro6','Una descripcion','localhost/url6',6,now());
-INSERT INTO Tabla6 VALUES (null,'Un registro6','Una descripcion','localhost/url6',6,now());
+INSERT INTO Tabla6 VALUES (null,'Un registro6','Una descripcion','imagenes/1.jpg6',6,now());
+INSERT INTO Tabla6 VALUES (null,'Un registro6','Una descripcion','imagenes/1.jpg6',6,now());
+INSERT INTO Tabla6 VALUES (null,'Un registro6','Una descripcion','imagenes/1.jpg6',6,now());

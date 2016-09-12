@@ -1,9 +1,9 @@
 <?php
 
 
-//se trabaja con la version 5.6 de php 
+//se trabaja con la version 5.6 de php
 
-$conexion = mysqli_connect("localhost", "root", "esasistemas", "events");
+$conexion = mysqli_connect("localhost", "root", "esasistemas", "linea");
 if (mysqli_connect_errno()) {
     printf("Conexión fallida: %s\n", mysqli_connect_error());
     exit();
