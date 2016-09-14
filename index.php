@@ -12,22 +12,16 @@
     <link rel='stylesheet' href='<?php echo $path; ?>css/linea.css' />
   </head>
   <body ng-controller="lineaController">
-
-
-
     <div class="container">
       <div class="row">
 				<div class="col-md-12">
-					<div class="page-header">
-					  <h1>Linea del tiempo</h1>
-					</div>
-					<div style="display:inline-block;width:100%;overflow-y:auto;">
+					<div id="timeline" style="display:inline-block;width:100%;overflow-y:auto;">
 					<ul class="timeline timeline-horizontal">
 
 
-						<li class="timeline-item" ng-repeat="element in datos | orderBy: ['fechaSegundos','indiceGeneral'] track by $index">
-							<div class="timeline-badge success"><i class="glyphicon glyphicon-check"></i></div>
-							<div class="timeline-panel">
+						<li id="{{element.indiceGeneral}}" class="timeline-item " ng-repeat="element in datos | orderBy: ['fechaSegundos','indiceGeneral'] track by $index">
+							<div  class="timeline-badge success " ng-click="ir('tabla_'+element.indiceGeneral)"><i  class="glyphicon glyphicon-check"></i></div>
+							<div class="timeline-panel ">
 								<div class="timeline-heading">
 									<h4 class="timeline-title">{{element.titulo}}</h4>
 									<p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> {{element.fecha_creacion}}</small></p>
@@ -46,32 +40,26 @@
 										</ul>
 				</div>
 			</div>
-
-      <table class="table" >
-        <tr>
-          <th>#</th>
-          <th>Titulo</th>
-          <th>Descripcion</th>
-          <th>File</th>
-          <th>Url</th>
-          <th>Fecha</th>
-
-        </tr>
-        <tr ng-repeat="element in datos | orderBy: ['fechaSegundos','indiceGeneral'] track by $index">
-          <td>{{element.indiceGeneral}}</td>
-          <td>{{element.titulo}}</td>
-          <td>{{element.descripcion}}</td>
-          <td>{{element.file}}</td>
-          <td>{{element.url}}</td>
-          <td>{{element.fecha_creacion}}</td>
-
-        </tr>
-      </table>
     </div>
+
+		<div class="" id="registrosTabla">
+
+		        	<div  class="panel panel-default" id="{{'tabla_'+element.indiceGeneral}}" ng-click="ir(element.indiceGeneral)" ng-repeat="element in datos | orderBy: ['fechaSegundos','indiceGeneral'] track by $index">
+			          <div class="panel-heading"><p>{{element.titulo}} </p>
+			          </div>
+								<p>{{element.descripcion}} </p>
+			          <p>{{element.file}}</p>
+			          <p>{{element.url}}</p>
+			          <p>{{element.fecha_creacion}}</p>
+
+			        </div>
+
+		</div>
 
     <script type="text/javascript" src="<?php echo $path; ?>js/jquery.js"></script>
     <script type="text/javascript" src="<?php echo $path; ?>js/bootstrap.js"></script>
     <script type="text/javascript" src="<?php echo $path; ?>js/angular.js"></script>
     <script type="text/javascript" src="<?php echo $path; ?>js/lineaApp.js"></script>
+		<script type="text/javascript" src="<?php echo $path; ?>js/scrollTo.js"></script>
   </body>
 </html>

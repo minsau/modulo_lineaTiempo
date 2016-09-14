@@ -149,6 +149,9 @@
   width: 100%;
   margin-bottom: 20px;
 }
+.ubicar{
+
+}
 .timeline-horizontal .timeline-item .timeline-panel:before {
   top: auto;
   bottom: -16px;
@@ -167,4 +170,20 @@
   top: auto;
   bottom: 0px;
   left: 43px;
+
+}
+
+.timeline-badge :hover{
+    cursor: pointer;
+}
+
+#registrosTabla{
+  max-width: 85%;
+  max-height: 40%;
+  min-width: 85%;
+  min-height: 40%;
+  width: 85%;
+  height: 40%;
+  overflow-y: scroll;
+  position: absolute;
 }
