@@ -29,7 +29,7 @@
 								<div class="timeline-body">
                   <div class="col-md-6 col-md-3">
                     <a href="#" class="thumbnail">
-                      <img src="{{element.url}}" alt="" />
+                      <img src="{{element.url}}" ng-click="setUrl(element.url)" data-toggle="modal" data-target="#mostrarArchivo" alt="" />
                     </a>
                   </div>
 
@@ -56,6 +56,23 @@
 
 		</div>
 
+
+		<div id="mostrarArchivo" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Ver archivo {{url}}</h4>
+          </div>
+          <div class="modal-body">
+						<iframe src="{{url}}" width="100%" height="100%">{{url}}</iframe>
+          </div>
+        </div>
+
+      </div>
+    </div>
     <script type="text/javascript" src="<?php echo $path; ?>js/jquery.js"></script>
     <script type="text/javascript" src="<?php echo $path; ?>js/bootstrap.js"></script>
     <script type="text/javascript" src="<?php echo $path; ?>js/angular.js"></script>
